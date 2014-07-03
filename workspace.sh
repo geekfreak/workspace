@@ -1,3 +1,7 @@
+git config --global user.email "davey@geekfreak.com"                
+git config --global user.name "ʞɐǝɹɟʞǝǝƃ" 
+git config --global core.autocrlf input
+
 cd workspace/
 npm install -g grunt-cli
 
