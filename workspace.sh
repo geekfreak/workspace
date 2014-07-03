@@ -13,4 +13,5 @@ cd ..
 git clone git@github.com:uxisready/uxisready.com.git
 cd uxisready.com
 npm install
+grunt
 cd ..
