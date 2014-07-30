@@ -2,10 +2,6 @@ git config --global user.email "davey@geekfreak.com"
 git config --global user.name "ʞɐǝɹɟʞǝǝƃ" 
 git config --global core.autocrlf input
 
-git config --global user.email "davey@geekfreak.com"                
-git config --global user.name "ʞɐǝɹɟʞǝǝƃ" 
-git config --global core.autocrlf input
-
 git config --global alias.alias "!sh -c '[ \$# = 2 ] && git config --global alias.\"\$1\" \"\$2\" && exit 0 || echo \"usage: git alias <new alias> <original command>\" >&2 && exit 1' -"
 
 git alias aliases "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'"
