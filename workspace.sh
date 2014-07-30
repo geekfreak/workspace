@@ -4,7 +4,7 @@ git config --global core.autocrlf input
 
 git config --global alias.alias "!sh -c '[ \$# = 2 ] && git config --global alias.\"\$1\" \"\$2\" && exit 0 || echo \"usage: git alias <new alias> <original command>\" >&2 && exit 1' -"
 
-git alias aliases "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'"
+git alias aliases "!git config --get-regexp 'alias.*' | colrm 1 6 | sort | sed 's/[ ]/\t/'"
 git alias st status
 git alias br branch
 git alias ci commit
