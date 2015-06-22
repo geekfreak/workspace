@@ -1,3 +1,32 @@
+
+alias apt-get='sudo apt-get'
+alias df='df -H'
+alias du='du -ch'
+alias egrep='egrep --color=auto'
+alias fastping='ping -c 100 -s.2'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias h='history | grep '
+alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
+alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias mount='mount |column -t'
+alias now='date +"%T"'
+alias nowdate='date +"%d-%m-%Y"'
+alias nowtime='now'
+alias p='ps -ef | grep '
+alias path='echo -e ${PATH//:/\\n}'
+alias ping='ping -c 5'
+alias poweroff='sudo /sbin/poweroff'
+alias reboot='sudo /sbin/reboot'
+alias shutdown='sudo /sbin/shutdown'
+alias top='atop'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias updatey='sudo apt-get --yes'
+
 git config --global user.email "davey@geekfreak.com"                
 git config --global user.name "ʞɐǝɹɟʞǝǝƃ" 
 git config --global core.autocrlf input
@@ -16,6 +45,7 @@ git alias last 'log -1 HEAD'
 git alias df diff
 git alias changes "diff --name-status -r"
 git alias diffstat "diff --stat -r"
+
 
 cd workspace/
 npm install -g grunt-cli
